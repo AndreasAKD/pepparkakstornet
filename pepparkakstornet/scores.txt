@@ -7,5 +7,5 @@ Lag 6,80,150,6,75
 Lag 7,52,50,0,50
 Lag 8,65,100,2,60
 
-
-Del1: Höjd, Design, Del2: Träffar, Höjd igen
+ORDNING:
+Lag, Del1Höjd, Del1Design, Del2Träffar, Del2Höjd
