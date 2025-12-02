@@ -52,12 +52,3 @@ Totalt:
 ORDNING: Lag, Del1Höjd, Del1Design, Del2Träffar, Del2Höjd
 
 Exempel:
-
-Lag 1,88,100,3,10
-Lag 2,48,150,4,40
-Lag 3,60,50,2,55
-Lag 4,70,100,5,60
-Lag 5,45,100,1,30
-Lag 6,80,150,6,75
-Lag 7,52,50,0,50
-Lag 8,65,100,2,60
