@@ -50,5 +50,3 @@ Totalt:
 `pepparkakstornet/scores.txt` ska vara komma-separerad (CSV). Varje data-rad ska följa ordningen:
 
 ORDNING: Lag, Del1Höjd, Del1Design, Del2Träffar, Del2Höjd
-
-Exempel:
