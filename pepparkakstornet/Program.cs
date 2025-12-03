@@ -17,9 +17,7 @@ class Team
 
 class Program
 {
-    // Expects each data line in the file to be:
-    // TeamName,Height1,DesignScore,Hits,Height2
-    // Example: Lag X,48,150,4,40
+
     static void Main(string[] args)
     {
         Console.WriteLine("PEPPARKAKSTORNET - RESULTATGENERATOR\n");
@@ -39,18 +37,14 @@ class Program
             var parts = line.Split(',', StringSplitOptions.TrimEntries);
             if (parts.Length < 5)
             {
-                // Not enough columns — skip (this will also skip comment lines like "Del1: ...")
                 continue;
             }
 
-            // Robust numeric parsing
             if (!int.TryParse(parts[1], out var height1)
                 || !int.TryParse(parts[2], out var designScore)
                 || !int.TryParse(parts[3], out var hits)
                 || !int.TryParse(parts[4], out var height2))
             {
-                // Skip malformed data lines and optionally inform user
-                Console.WriteLine($"Hoppar över rad (felaktiga tal): {line}");
                 continue;
             }
 
@@ -86,7 +80,6 @@ class Program
         var sorted = teams.OrderByDescending(t => t.TotalScore).ToList();
         var winner = sorted.First();
 
-        // Print winner with color and ASCII banner at the top
         Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("***************************************");
@@ -114,7 +107,6 @@ class Program
             Console.WriteLine($"  Totalt: {t.TotalScore}p");
         }
 
-        // Print winner with color and ASCII banner at the top
         Console.WriteLine();
         Console.ForegroundColor = ConsoleColor.Green;
         Console.WriteLine("***************************************");
@@ -122,7 +114,6 @@ class Program
         Console.WriteLine("***************************************");
         Console.ResetColor();
 
-        // Unsorted listing (original insertion order)
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine("Ej sorterad Lista (originalordning):");

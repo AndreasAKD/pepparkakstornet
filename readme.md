@@ -7,7 +7,7 @@ Poäng för höjd:
 - Varje centimeter = 1 poäng (t.ex. 80 cm = 80 poäng).
 - Bonus: Om tornet överstiger 50 cm tilldelas laget +50 bonuspoäng.
 
-Poäng för design:
+Poäng för estetisk design:
 - Okej design: 50 poäng  
 - Bra design: 100 poäng  
 - Jättebra design: 150 poäng
@@ -61,3 +61,68 @@ Lag 5,45,100,1,30
 Lag 6,80,150,6,75
 Lag 7,52,50,0,50
 Lag 8,65,100,2,60
+
+## Lagindelning
+
+### Lag 1
+Zakarias Nordeborg
+Andreas Hallqvist
+Gustav Skoglund
+Jonathan Wiberg
+Simone Kranawetter
+Anton Strömbom
+
+### Lag 2
+Daniel Cederhammar
+Hannes Skoglund
+William Virström
+Simon Öhman
+Patrik Lundin
+André Ringqvist
+
+### Lag 3
+Jonas Lindqvist
+Mikael Karlqvist
+Håkan Sjöström
+Klas Svedberg
+Josefine Gustavsson
+Daniel Cornelius
+
+### Lag 4
+Victor Håkans
+Agneta Lindqvist
+Christopher Isene
+Sabina Nordgren
+David Andresen
+Christian Rudolphi
+
+### Lag 5
+Niklas Malmqvist
+Daniel Chong
+Johan Grankvist
+Joakim Schütt
+Richard Tyregrim
+Krister Norström
+
+### Lag 6
+Anders Vimefall
+Vincent Lindgren
+Mikael Stark
+Henrik Sandberg
+Tobias Lindqvist
+
+### Lag 7
+Oscar Östlund
+Sara Enzinger
+Daniel Lennartsson
+Anton Rosengren
+Denis Mahmutovic
+Mikael Karlsson
+
+### Lag 8
+Ola Wistrand
+Harald Mörk
+Magnus Ahlgren
+Stefan Pettersson
+Albin Preis
+
