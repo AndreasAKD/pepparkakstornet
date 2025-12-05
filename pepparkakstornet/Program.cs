@@ -21,11 +21,10 @@ class Program
 
     static void Main(string[] args)
     {
-        // Configurable bonus settings
         int bonusThreshold = 50; // Minimum height for bonus
         int bonusValue = 50;     // Bonus points
 
-        Console.WriteLine("PEPPARKAKSTORNET - RESULTATGENERATOR\n");
+        Console.WriteLine("KLANKRIGET - RESULTATGENERATOR\n");
         string file = "scores.txt";
         if (!File.Exists(file))
         {
@@ -93,67 +92,11 @@ class Program
             Console.Write(".");
             Thread.Sleep(400);
         }
-        Console.WriteLine("\n");
-
-        Console.ForegroundColor = ConsoleColor.Green;
-        Console.WriteLine("***************************************");
-        Console.WriteLine($"***  VINNARE: {winner.Name} med {winner.TotalScore} poäng!  ***");
-        Console.WriteLine("***************************************");
-        Console.ResetColor();
-
-        Console.WriteLine("\nSlutresultat (sorterat på totalpoäng):");
-        foreach (var t in sorted)
-        {
-            int heightBonus1 = t.Height1 > bonusThreshold ? bonusValue : 0;
-            Console.WriteLine($"\n{t.Name}:");
-            Console.WriteLine($"  Del 1 (Byggmoment):");
-            Console.WriteLine($"    Höjd: {t.Height1} cm = {t.Height1}p{(heightBonus1 > 0 ? $" + {heightBonus1}p bonus" : "")}");
-            Console.WriteLine($"    Designpoäng: {t.DesignScore}p");
-            Console.WriteLine($"    Summa Del 1: {t.Del1Score}p");
-
-            int heightBonus2 = t.Height2 > bonusThreshold ? bonusValue : 0;
-            int hitPoints = t.Hits * 20;
-            Console.WriteLine($"  Del 2 (Duellmoment):");
-            Console.WriteLine($"    Träffar: {t.Hits} st = {hitPoints}p");
-            Console.WriteLine($"    Kvarvarande höjd: {t.Height2} cm = {t.Height2}p{(heightBonus2 > 0 ? $" + {heightBonus2}p bonus" : "")}");
-            Console.WriteLine($"    Summa Del 2: {t.Del2Score}p");
-
-            Console.WriteLine($"  Totalt: {t.TotalScore}p");
-        }
 
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-        Console.WriteLine();
-
 
         while (!Console.KeyAvailable)
         {
@@ -180,12 +123,57 @@ class Program
         Console.WriteLine("***************************************");
         Console.ResetColor();
 
-        //Console.WriteLine();
-        //Console.WriteLine();
-        //Console.WriteLine("Ej sorterad Lista (originalordning):");
-        //foreach (var t in teams)
-        //{
-        //    Console.WriteLine($"{t.Name}: Del 1 = {t.Del1Score}p, Del 2 = {t.Del2Score}p, Totalt = {t.TotalScore}p");
-        //}
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+        Console.WriteLine();
+
+        Console.WriteLine("\nSlutresultat (sorterat på totalpoäng):");
+        foreach (var t in sorted)
+        {
+            int heightBonus1 = t.Height1 > bonusThreshold ? bonusValue : 0;
+            Console.WriteLine($"\n{t.Name}:");
+            Console.WriteLine($"  Del 1 (Byggmoment):");
+            Console.WriteLine($"    Höjd: {t.Height1} cm = {t.Height1}p{(heightBonus1 > 0 ? $" + {heightBonus1}p bonus" : "")}");
+            Console.WriteLine($"    Designpoäng: {t.DesignScore}p");
+            Console.WriteLine($"    Summa Del 1: {t.Del1Score}p");
+
+            int heightBonus2 = t.Height2 > bonusThreshold ? bonusValue : 0;
+            int hitPoints = t.Hits * 20;
+            Console.WriteLine($"  Del 2 (Duellmoment):");
+            Console.WriteLine($"    Träffar: {t.Hits} st = {hitPoints}p");
+            Console.WriteLine($"    Kvarvarande höjd: {t.Height2} cm = {t.Height2}p{(heightBonus2 > 0 ? $" + {heightBonus2}p bonus" : "")}");
+            Console.WriteLine($"    Summa Del 2: {t.Del2Score}p");
+
+            Console.WriteLine($"  Totalt: {t.TotalScore}p");
+        }
     }
 }
